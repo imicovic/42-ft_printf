@@ -11,3 +11,4 @@ cc my_program.c -L. -lftprintf -o my_program
 ```
 
 The goal of the project was to introduce us to the variadic functions and improve problem solving abilities and string manipulation skills. 
+For detailed information take a look at the [subject](en.subject.pdf)
