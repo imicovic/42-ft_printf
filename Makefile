@@ -1,10 +1,9 @@
 NAME		= libftprintf.a
-INCLUDE		= include
 LIBFT		= libft
 SRC_DIR		= src/
 OBJ_DIR		= obj/
 CC			= cc
-CFLAGS		= -Wall -Werror -Wextra -I
+CFLAGS		= -Wall -Werror -Wextra -Iinclude
 RM			= rm -rf
 AR			= ar rcs
 
@@ -29,7 +28,7 @@ $(NAME):	$(OBJ)
 
 $(OBJ_DIR)%.o: $(SRC_DIR)%.c
 			@mkdir -p $(OBJ_DIR)  # Ensure obj/ exists before compiling
-			$(CC) $(CFLAGS) $(INCLUDE) -c $< -o $@
+			$(CC) $(CFLAGS) -c $< -o $@
 
 clean:
 			@$(RM) $(OBJ_DIR)
