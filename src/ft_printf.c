@@ -6,7 +6,7 @@
 /*   By: imicovic <imicovic@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/06/15 17:28:27 by imicovic          #+#    #+#             */
-/*   Updated: 2025/03/05 19:40:30 by imicovic         ###   ########.fr       */
+/*   Updated: 2025/03/09 20:58:33 by imicovic         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -65,10 +65,4 @@ int	ft_printf(const char *fmt, ...)
 	}
 	va_end(args);
 	return (count);
-}
-
-#include <stdio.h>
-int main(void)
-{
-	printf("%x \n", 0);
 }
